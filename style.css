@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    align-content: center
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background: #fff;
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+#banner {
+    background: url('Banner 2.jpg') no-repeat center center/cover;
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    text-align: center;
+    color: #fff;
+}
+
+.banner-text h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.banner-text p {
+    font-size: 1.5rem;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.about-image img {
+    height: 30rem;
+    border-radius: 50%;
+}
+
+.about-text {
+    margin-left: 5rem;
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.about-text p {
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+#services {
+    margin: 5rem 0;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.service-box {
+    background: #f2f2f2;
+    padding: 2.5rem;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 2.2px 2.2px rgba(0, 0, 0, 0.02), 0 5.3px 5.3px rgba(0, 0, 0, 0.028),
+    0 10px 10px rgba(0, 0, 0, 0.035), 0 17.9px 17.9px rgba(0, 0, 0, 0.042),
+    0 33.4px 33.4px rgba(0, 0, 0, 0.05), 0 80px 80px rgba(0, 0, 0, 0.07);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.service-box h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.service-box p {
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+#portfolio {
+    margin: 5rem 0;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.portfolio-box {
+    background: #f2f2f2;
+    padding: 2.5rem;
+    text-align: center;
+    width: 40%;
+    margin-bottom: 2rem;
+    box-shadow: 0 2.2px 2.2px rgba(0, 0, 0, 0.02), 0 5.3px 5.3px rgba(0, 0, 0, 0.028),
+    0 10px 10px rgba(0, 0, 0, 0.035), 0 17.9px 17.9px rgba(0, 0, 0, 0.042),
+    0 33.4px 33.4px rgba(0, 0, 0, 0.05), 0 80px 80px rgba(0, 0, 0, 0.07);
+}
+
+.portfolio-box img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio-box h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.portfolio-box p {
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+#contact {
+    margin: 5rem 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+form input,
+form textarea {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: none;
+    border-bottom: 2px solid #333;
+    width: 30rem;
+    background: transparent;
+}
+
+form textarea {
+    height: 10rem;
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in;
+}
+
+form input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background: #333;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
+}
